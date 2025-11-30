@@ -93,7 +93,7 @@ export default function ProjectsPage() {
       <div className="text-center animate-fade-in">
         <div className="bg-black/80 border border-purple/30 rounded-xl p-8">
           <h3 className="text-2xl font-bold text-white mb-4">Have a Project in Mind?</h3>
-          <p className="text-white mb-6">Let's collaborate and bring your ideas to life with cutting-edge solutions.</p>
+          <p className="text-white mb-6">Let&apos;s collaborate and bring your ideas to life with cutting-edge solutions.</p>
           <Link
             href="/contact"
             className="inline-block px-8 py-3 bg-purple rounded-lg text-white font-semibold hover:bg-white hover:text-purple transition-all duration-300 hover:scale-105"

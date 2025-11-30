@@ -89,7 +89,7 @@ export default function ExperiencePage() {
         >
           <div className="bg-black/80 border border-purple/30 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-white mb-4">Interested in Working Together?</h3>
-            <p className="text-white mb-6">I'm always open to discussing new opportunities and exciting projects.</p>
+            <p className="text-white mb-6">I&apos;m always open to discussing new opportunities and exciting projects.</p>
             <Link
               href="/contact"
               className="inline-block px-8 py-3 bg-purple rounded-lg text-white font-semibold hover:bg-white hover:text-purple transition-all duration-300 hover:scale-105"
