@@ -78,7 +78,7 @@ function HeroSection() {
             <span className="text-white">
               {personalData.name}
             </span>
-            {` , I'm a Professional `}
+            {` , I&#39;m a Professional `}
             <span className="text-white">
               {personalData.designation}
             </span>
