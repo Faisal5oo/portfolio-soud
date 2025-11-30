@@ -74,7 +74,7 @@ function HeroSection() {
             className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]"
           >
             Hello, <br />
-            This is {' '}
+            This is {" "}
             <span className="text-white">
               {personalData.name}
             </span>
@@ -95,7 +95,7 @@ function HeroSection() {
               { icon: FaFacebook, href: personalData.facebook },
               { icon: SiLeetcode, href: personalData.leetcode },
               { icon: FaTwitterSquare, href: personalData.twitter },
-            ].filter(social => social.href && social.href.trim() !== '').map((social, index) => {
+            ].filter(social => social.href && social.href.trim() !== "").map((social, index) => {
               const Icon = social.icon;
               return (
                 <motion.div
@@ -106,7 +106,7 @@ function HeroSection() {
                 >
                   <Link
                     href={social.href}
-                    target='_blank'
+                    target="_blank"
                     className="transition-all text-white hover:text-pink duration-300"
                   >
                     <Icon size={30} />
@@ -126,7 +126,7 @@ function HeroSection() {
               </Link>
             </motion.div>
 
-            {personalData.resume && personalData.resume.trim() !== '' && (
+            {personalData.resume && personalData.resume.trim() !== "" && (
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link className="flex items-center gap-1 hover:gap-3 rounded-full bg-purple px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:bg-white hover:text-purple md:font-semibold" role="button" target="_blank" href={personalData.resume}>
                   <span>Get Resume</span>
