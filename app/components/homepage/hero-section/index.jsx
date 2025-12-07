@@ -78,7 +78,7 @@ function HeroSection() {
             <span className="text-white">
               {personalData.name}
             </span>
-            {` , I&#39;m a Professional `}
+            {" , I'm a Professional "}
             <span className="text-white">
               {personalData.designation}
             </span>
@@ -87,7 +87,7 @@ function HeroSection() {
 
           <motion.div
             variants={itemVariants}
-            className="my-12 flex items-center gap-5"
+            className="my-12 flex items-center justify-center gap-5"
           >
             {[
               { icon: BsGithub, href: personalData.github },

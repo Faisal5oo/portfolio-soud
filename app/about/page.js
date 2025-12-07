@@ -68,7 +68,7 @@ export default function AboutPage() {
               <p className="text-center text-white/80 mb-6">{personalData.designation}</p>
               
               {/* Social Links */}
-              <div className="grid grid-cols-3 gap-3 mb-6">
+              <div className="flex items-center justify-center gap-3 mb-6">
                 {socialLinks.map((social, index) => {
                   const Icon = social.icon;
                   return (
