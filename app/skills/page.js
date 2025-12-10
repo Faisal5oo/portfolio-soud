@@ -91,14 +91,14 @@ export default function SkillsPage() {
               className="group bg-black/80 backdrop-blur-sm border border-purple/30 rounded-xl p-6 hover:border-purple transition-all duration-300 cursor-pointer"
             >
               <div className="flex flex-col items-center justify-center gap-4">
-                <div className="w-16 h-16 flex items-center justify-center bg-black/50 rounded-lg group-hover:bg-purple/20 transition-colors">
+                <div className="w-16 h-16 flex items-center justify-center bg-black/50 rounded-lg group-hover:bg-purple/20 transition-colors overflow-hidden">
                   {skillImg && (
                     <Image
                       src={skillImg.src}
                       alt={skill}
                       width={40}
                       height={40}
-                      className="w-auto h-auto"
+                      className="max-w-full max-h-full object-contain"
                     />
                   )}
                 </div>

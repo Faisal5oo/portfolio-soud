@@ -21,7 +21,7 @@ function Footer() {
           <p className="text-sm text-white/70">
             © {currentYear} {personalData.name}. All rights reserved.
           </p>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 pr-0 sm:pr-10">
             {personalData.github && personalData.github.trim() !== '' && (
               <Link
                 target="_blank"
