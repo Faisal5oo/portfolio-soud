@@ -9,10 +9,14 @@ export const skillsData = [
   'Dart',
   'Node JS',
   'Express',
+  'Python',
+  'Graphql',
   'MongoDB',
   'PostgreSQL',
   'Git',
-  'Firebase'
+  'Firebase',
+  'GCP',
+  'AWS'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

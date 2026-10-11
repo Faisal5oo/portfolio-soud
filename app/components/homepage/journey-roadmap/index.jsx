@@ -2,38 +2,36 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaPlayCircle } from "react-icons/fa";
-
 const journeyData = [
   {
     id: 1,
     title: "Starting the Journey",
-    year: "2017-2021",
-    description: "Began my journey in computer science, earning a Bachelor's degree while building a strong foundation in programming, software development, and problem-solving. Developed a passion for creating innovative solutions and continuously learning new technologies.",
+    year: "2017-2025",
+    description: "Earned a Bachelor of Science in Computer Science from the National College of Business Administration & Economics in Lahore, Pakistan, building a strong foundation in programming and software development. Completed a Post-Degree Diploma in Web & Mobile App Development at Langara College in Vancouver, BC, deepening expertise in full-stack and mobile engineering.",
     milestone: "Foundations",
-    isVideo: true
+    image: "/image/journey/education-cs.jpg"
   },
   {
     id: 2,
-    title: "Mobile Application Developer",
+    title: "Mobile Software Engineer",
     year: "Aug 2021 – Jun 2022",
-    description: "Started my professional career at Alchemative, developing and maintaining Flutter apps for enterprise-level e-commerce platforms. Participated in Agile workflows including sprint planning, standups, and retrospectives. Increased app stability and reduced crash rates via structured testing and QA processes.",
+    description: "Started my professional career at Alchemative, developing enterprise-level Flutter applications for e-commerce and business platforms. Built mobile modules for authentication, product workflows, API communication, and user interactions while integrating Firebase and external SDKs. Improved reliability through production debugging, performance optimization, and Agile collaboration including sprint planning, code reviews, and testing.",
     milestone: "Professional Start",
     image: "/image/travel.jpg"
   },
   {
     id: 3,
-    title: "Mobile Application Developer",
+    title: "Full Stack Mobile Engineer",
     year: "Jul 2022 – Aug 2023",
-    description: "Joined Growex Solutions where I built cross-platform Flutter applications for e-commerce and business clients. Integrated third-party APIs, Firebase Cloud Messaging, and Realtime Database. Improved app load time by 30% through performance optimization and refactoring. Collaborated with designers to convert Figma UI mockups into high-performance mobile screens.",
+    description: "At Growex Solutions, developed and maintained production Flutter applications for Android and iOS from requirements through deployment. Integrated Firebase services including Firestore, Realtime Database, Authentication, and Cloud Messaging, and built Node.js REST API integrations. Improved performance through profiling, debugging, and production issue resolution while delivering user-focused experiences with designers, backend developers, and clients.",
     milestone: "Growth",
     image: "/image/crefin.jpg"
   },
   {
     id: 4,
-    title: "Project Developer Lead",
+    title: "Full Stack Software Engineer Lead",
     year: "Sep 2023 – Aug 2025",
-    description: "Led cross-functional teams at Langara College to design and develop three full-scale web and mobile applications for real-world clients. Developed Flutter frontends and Node.js/Firebase backends across multiple projects. Managed Agile sprints, task allocation, and Git workflows, improving delivery efficiency. Collaborated closely with UI/UX designers and the AI team to integrate intelligent solutions and deliver polished, production-ready web apps. Designed and documented REST APIs, improving system integration and performance. Enhanced overall product quality by optimizing data handling, reducing renders, and improving component reusability.",
+    description: "Led end-to-end development of production mobile and web applications for Langara College industry sponsored projects, spanning Flutter mobile clients, React frontends, Node.js backends, and cloud infrastructure. Designed Firestore data models, built serverless Cloud Functions, integrated third-party APIs, and collaborated with product, design, QA, and stakeholders to deliver high-quality releases.",
     milestone: "Leadership",
     image: "/image/real-estate.jpg"
   }
@@ -113,55 +111,27 @@ export default function JourneyRoadmap() {
                   </motion.div>
                 </div>
 
-                {/* Video Placeholder or Image Card */}
                 <div className={`flex-1 ${isEven ? 'lg:pl-12' : 'lg:pr-12'} lg:w-1/2`}>
-                  {item.isVideo ? (
-                    // Video Placeholder for first item
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6, delay: index * 0.2 + 0.1 }}
-                      whileHover={{ scale: 1.05 }}
-                      className="relative group overflow-hidden rounded-xl border border-purple/30 bg-black"
-                    >
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.2 + 0.1 }}
+                    whileHover={{ scale: 1.05, rotate: 1 }}
+                    className="relative group overflow-hidden rounded-xl border border-purple/30"
+                  >
                     <div className="absolute inset-0 bg-purple/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
-                    <div className="w-full h-64 flex items-center justify-center relative">
-                      <div className="absolute inset-0 bg-purple/5"></div>
-                      <div className="relative z-20 flex flex-col items-center justify-center">
-                        <motion.div
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.95 }}
-                          className="mb-4"
-                        >
-                          <FaPlayCircle className="text-6xl text-white/80 group-hover:text-white transition-colors duration-300" />
-                          </motion.div>
-                          <p className="text-white/70 text-sm font-medium">Video Coming Soon</p>
-                        </div>
-                      </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </motion.div>
-                  ) : (
-                    // Image for remaining items
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6, delay: index * 0.2 + 0.1 }}
-                      whileHover={{ scale: 1.05, rotate: 1 }}
-                      className="relative group overflow-hidden rounded-xl border border-purple/30"
-                    >
-                      <div className="absolute inset-0 bg-purple/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        width={600}
-                        height={400}
-                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </motion.div>
-                  )}
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      width={600}
+                      height={400}
+                      sizes="(max-width: 1024px) 100vw, 600px"
+                      unoptimized
+                      className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </motion.div>
                 </div>
               </motion.div>
             );

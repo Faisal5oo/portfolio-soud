@@ -172,19 +172,19 @@ function HeroSection() {
                 <span className="text-gray-400">{`['`}</span>
                 <span className="text-amber-300">Flutter</span>
                 <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">React Native</span>
+                <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">React</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Node.js</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
-                <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Firebase</span>
                 <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">GCP</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">AWS</span>
+                <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">TypeScript</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">PostgreSQL</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>

@@ -1,8 +1,8 @@
 export const personalData = {
   name: "Soud Haroon",
   profile: '/profile.png',
-  designation: "Software Engineer",
-  description: "Full Stack & Mobile App Developer with 4+ years of experience delivering scalable, user-focused web and mobile applications using Flutter, React, Node.js, Firebase, and MongoDB. Strong foundation in UI/UX implementation, backend development, API integration, and performance optimization. Experienced in leading project execution, collaborating in Agile teams, and delivering production-ready solutions for e-commerce, logistics, education, and caregiving applications.",
+  designation: "Full Stack Software Engineer",
+  description: "Full Stack Software Engineer with 5 years of experience designing, developing, and maintaining production mobile and cloud-based applications. Strong expertise in cross-platform mobile development using Flutter and React Native, backend development with Node.js, RESTful APIs, Firebase, and serverless architectures. Experienced in building scalable application architectures, integrating third-party services, optimizing databases, debugging complex production issues, and delivering reliable end-to-end solutions across mobile, frontend, backend, and cloud environments. Comfortable collaborating with product, design, QA, and engineering teams in fast-paced Agile environments.",
   email: 'soudharoon@gmail.com',
   phone: '+1 672-272-8244',
   address: 'Vancouver, BC, Canada',
